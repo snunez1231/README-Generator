@@ -9,6 +9,13 @@ function renderLicenseSection(license) {
   This application is covered under the ${license} license.
   
   ${renderLicenseBadge(license)} [License Information](#license)`;
+
+  }
+  function renderLicenseBadge(license){
+    //if ![Static Badge](https://img.shields.io/badge/License-MIT-brightgreen)
+    if (license === 'MIT') {
+     return `![Static Badge](https://img.shields.io/badge/License-MIT-brightgreen)`   
+    }
   }
   
   // TODO: Create a function to generate markdown for README
@@ -21,7 +28,7 @@ function renderLicenseSection(license) {
   ## Table of Contents
   - [Installation](#installation)
   - [Usage](#usage)
-  - ${renderLicenseLink(data.license)}
+  - [License Information](#license)
   - [Contributing](#contributing)
   - [Tests](#tests)
   - [Questions](#questions)
