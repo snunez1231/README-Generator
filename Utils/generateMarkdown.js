@@ -17,6 +17,26 @@ function renderLicenseSection(license) {
      return `![Static Badge](https://img.shields.io/badge/License-MIT-brightgreen)`   
     }
   }
+
+  function renderLicenseBadge(license){
+    //if ![Static Badge](https://img.shields.io/badge/License-BSD-brightgreen)
+    if (license === 'BSD') {
+     return `![Static Badge](https://img.shields.io/badge/License-BSD-brightgreen)`   
+    }
+  }
+  function renderLicenseBadge(license){
+    //if![Static Badge](https://img.shields.io/badge/License-GPL-brightgreen)
+    if (license === 'GPL') {
+     return `![Static Badge](https://img.shields.io/badge/License-GPL-brightgreen) `   
+    }
+  }
+
+  function renderLicenseBadge(license){
+    if (license === 'None') {
+     return `![Static Badge](https://img.shields.io/badge/License-None-brightgreen)`   
+    }
+  }
+  
   
   // TODO: Create a function to generate markdown for README
   function generateMarkdown(data) {
